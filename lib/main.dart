@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:weather/report_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,12 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(fontSize: 30.0, color: Colors.pink),
             ),
             TextButton(
-              onPressed: () {
-                // Navigator.push(
-                //  context,
-                // MaterialPageRoute(builder: (context) => const ReportPage()),
-                // );
-              },
+              onPressed: () {},
               child: const Text(
                 'START',
                 style: TextStyle(fontSize: 20.0, color: Colors.blueGrey),
