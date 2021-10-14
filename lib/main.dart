@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//import 'package:weather/report_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,11 +8,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Weather App',
+      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -31,18 +31,31 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Text(
-              'Weather App',
+        body: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            const Text(
+              'WELCOME',
+              style: TextStyle(fontSize: 30.0, color: Colors.pink),
             ),
-            Text('alekhya here'),
-            Text('new'),
+            TextButton(
+              onPressed: () {
+                // Navigator.push(
+                //  context,
+                // MaterialPageRoute(builder: (context) => const ReportPage()),
+                // );
+              },
+              child: const Text(
+                'START',
+                style: TextStyle(fontSize: 20.0, color: Colors.blueGrey),
+              ),
+            ),
           ],
         ),
-      ),
-    );
+      ],
+    ));
   }
 }

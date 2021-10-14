@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\thirdproject\\weather"
+		},
+		{
+			"name": "flutter_test_weather",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
